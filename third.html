@@ -1,0 +1,21 @@
+<div id='d1'> this is the first id</div> 
+
+<div id='d2'>this is the second id</div>
+
+<div id='d3'>this is the third id</div>
+
+<script>
+function gt() {
+
+    x = document.getElementById("d2"); //this will tell what is the position of cordinate in the document or js knows where is d1,d2,d3
+    y = document.getElementById("d3");
+   // alert(x); //this will pop up in your browser
+
+    //data=x.innerHTML; // this will catch the content in the div tag.Now you can get the data from calling any div id here
+    //alert(data)
+    x.innerHTML=y.innerHTML; // you can replace the actual content with this command. here converting x content to y
+}
+</script>
+
+<button onclick="gt();">click me</button> <!--this will creare a button on your page and on click you will get innterHTML value-Hellohimanshu-->
+
