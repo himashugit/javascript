@@ -1,0 +1,23 @@
+<script>
+    function gt() {
+       var x = document.getElementById("firstinput"); // using doc.get inside the function and defining inside a var, calling input inside func
+       var y = document.getElementById("d1"); // calling the div content
+
+       y.innerHTML = x.value; // this will replace the content of div with x value so as soon as you type inside box and on click on the box it will auto print
+    }
+
+    function gta() {
+        var y = document.getElementById("d1");
+        document.location = "http://" +  y.innerHTML; //this is to concatenate string in js
+    }
+    
+</script>
+
+<!-- <input id='firstinput' onclick="gt();" /> this is the input tag whihc will create a box in your script browser and you can write here-->
+
+<input id='firstinput' onkeyup="gt();" /> <!-- this will give the option as you type same will be type out of the box-->
+
+<!-- <div id='d1'>my content here</div> div tag and i define d1 as id and put some content-->
+
+<div id='d1' onclick="gta();">my content here</div> <!--we're using onclick option to call the gta function-->
+
